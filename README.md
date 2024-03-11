@@ -23,5 +23,21 @@ group. That is, the result will have lines such as:
 
 
 
+For matrix mul the following are the constraints
+You should modify Multiply.java only. In your Java
+main program, args[0] is the first input matrix M, args[1] is the second input matrix N, args[2] is the
+directory name to pass the intermediate results from the first Map-Reduce job to the second, and args[3]
+is the output directory. The file formats for the input and output must be text and the file format of the
+intermediate results must be sequence file format (binary). There are two small sparse matrices 4*3 and
+3*3 in the files M-matrix-small.txt and N-matrix-small.txt for testing in local mode. Their matrix multiplication
+must return the 4*3 matrix in solution-small.txt. Then, there are two moderate-sized matrices
+1000*500 and 500*1000 in the files M-matrix-large.txt and M-matrix-large.txt for testing in
+distributed mode. The first and last lines of the matrix multiplication of these two matrices must must be
+similar to those in solution-large.txt.
+
+
+
+
+
 
 
